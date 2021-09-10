@@ -40,7 +40,10 @@
   + システムとの自由なやりとりができる対話システム
   + 雑談対話システム
     + 現状把握 
-      + End-to-Endの対話システムモデル
+      + End-to-Endの対話システムモデル (Task-Oriented Dialog Systems that Consider Multiple Appropriate Responses under the Same Context)
+    + 実現するためには
+      + 相手の話の意図を理解する => 対話行為の推定
+      + 
 ## 解決手段
 ## 手法の調査/検討
 ## 問題解決の提案
