@@ -1,6 +1,5 @@
 FROM continuumio/anaconda3
 
-
 # Install apt package.
 RUN DEBIAN_FRONTEND=noninteractive \
    apt-get update && apt-get install -y \
@@ -23,15 +22,19 @@ RUN DEBIAN_FRONTEND=noninteractive \
    libssl-dev \
    openssl \
    libbz2-dev \
-   python-pip \
    libreadline-dev
 
-
-RUN conda install -y tensorflow-gpu
-RUN conda install -c anaconda tensorflow-datasets
-RUN conda install pytorch torchvision -c pytorch 
+RUN conda install -c conda-forge numpy
+RUN conda install -c conda-forge jupyterlab
+RUN conda install -c conda-forge tensorboard
+RUN conda install pytorch==1.9.0 torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
 RUN conda install -c conda-forge jsonlines
 RUN conda install -c conda-forge pyhocon
+RUN conda install -c conda-forge transformers
+RUN conda install -c conda-forge gensim
+RUN conda install -c conda-forge scikit-learn
+RUN conda install -c conda-forge nltk
+RUN conda install -c pytorch torchtext
 RUN mkdir work
 
 ENV NVIDIA_VISIBLE_DEVICES all
