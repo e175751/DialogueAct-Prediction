@@ -13,7 +13,6 @@
 
 ## Usage
 ```
-docker build -t image_name:tagu
-docker run -v "pass:pass" -p "port:port" image_name:
+docker-compose up -d
 ```
 ## References
