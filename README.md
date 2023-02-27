@@ -15,4 +15,11 @@
 ```
 docker-compose up -d
 ```
+
+## データセットのリンク先
+[Processing the Switchboard Dialogue Act Corpus](https://github.com/NathanDuran/Switchboard-Corpus)
+
+## 修論
+[不均衡データセットに有効な応答の対話行為分類法](https://gitlab.ie.u-ryukyu.ac.jp/thesis/2022/k218591/-/blob/main/master_paper.pdf)
+
 ## References
