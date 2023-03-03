@@ -19,13 +19,17 @@
 [加工後のデータセットのリンク先](https://drive.google.com/drive/folders/114HBmAobzA00GkKbU-rJbU0L04TYGA2R)
 
 Corpus_data: 通常のデータセット
+
 corpus_Hire3: 階層型のデータセット
 
 ## Usage
 
 加工後のデータセットを ```work/ipynb/data/```の下に保存
+
 その後```docker-compose up -d```で動くはず
+
 ```work/ipynb/CostSensitiveCostMatrix.ipynb```がコスト考慮型とFLの実験環境
+
 ```work/ipynb/DialogueActEstimationofResponceHierarchicalClassification.ipynb```が階層型手法の実験環境
 
 ## モデル
